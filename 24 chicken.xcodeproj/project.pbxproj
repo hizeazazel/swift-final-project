@@ -58,6 +58,11 @@
 			path = "24 chickenUITests";
 			sourceTree = "<group>";
 		};
+		899B16502CFCA0A90070F74A /* New Folder */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "New Folder";
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +97,7 @@
 				386C3CE22CFC782100699B44 /* 24 chickenTests */,
 				386C3CEC2CFC782100699B44 /* 24 chickenUITests */,
 				386C3CC72CFC781F00699B44 /* Products */,
+				899B16502CFCA0A90070F74A /* New Folder */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,6 +128,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				386C3CC82CFC781F00699B44 /* 24 chicken */,
+				899B16502CFCA0A90070F74A /* New Folder */,
 			);
 			name = "24 chicken";
 			packageProductDependencies = (
@@ -289,7 +296,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 33Y8WB5F4A;
+				DEVELOPMENT_TEAM = 4J4L7B8Q89;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "24 chicken/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -302,7 +309,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "tw32.-4-chicken";
+				PRODUCT_BUNDLE_IDENTIFIER = jesc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -317,7 +324,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 33Y8WB5F4A;
+				DEVELOPMENT_TEAM = 4J4L7B8Q89;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "24 chicken/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -330,7 +337,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "tw32.-4-chicken";
+				PRODUCT_BUNDLE_IDENTIFIER = jesc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
