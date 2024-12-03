@@ -9,11 +9,35 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    var cart: [String] = []
+    
+    @IBAction func btnAddRM(_ sender: UIButton) {
+        addItemToCart(item: "Rice Meal")
     }
 
+    @IBAction func btnAddGM(_ sender: UIButton) {
+        addItemToCart(item: "Group Meal")
+    }
 
+    @IBAction func btnAddSD(_ sender: UIButton) {
+        addItemToCart(item: "Side Dish")
+    }
+
+    @IBAction func btnAddXS(_ sender: UIButton) {
+        addItemToCart(item: "Extra Sauce")
+    }
+
+    
+    func addItemToCart(item: String) {
+        cart.append(item)
+        print("Added \(item) to the cart.")
+        print("Current Cart: \(cart)")
+
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+    }
 }
 
