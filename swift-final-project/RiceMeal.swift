@@ -1,18 +1,17 @@
 //
-//  Item.swift
+//  RiceMeal.swift
 //  swift-final-project
 //
-//  Created by AIZELNOV SANTIAGO on 12/2/24.
+//  Created by Joseph Escalante on 12/3/24.
 //
 
 import UIKit
 
-class Item: NSObject{
+class RiceMeal: NSObject {
     var name: String
     var desc: String
     var price: Double
     var imageFile: String
-    
     
     init(name: String, desc: String, price: Double, imageFile: String){
         self.name = name

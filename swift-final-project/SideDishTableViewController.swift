@@ -7,15 +7,14 @@
 
 import UIKit
 
-class ItemTableViewController: UITableViewController{
+class SideDishTableViewController: UITableViewController{
     
     var items:[Item] = [
-        Item(name: "Yangnyeom", desc: "Extra Sauce", price: 45.0, imageFile: "yangyeom"),
-        Item(name: "Jack Daniels", desc: "Extra Sauce", price: 45.0, imageFile: "jack daniels"),
-        Item(name: "Spicy BBQ", desc: "Extra Sauce", price: 45.0, imageFile: "spicy bbq"),
-        Item(name: "Lemon Glaze", desc: "Extra Sauce", price: 45.0, imageFile: "lemon glaze"),
-        Item(name: "Truffle Mayo", desc: "Extra Sauce", price: 45.0, imageFile: "truffle mayo"),
-        Item(name: "Honey Mustard ", desc: "Extra Sauce", price: 45.0, imageFile: "honey mustart")
+        Item(name: "Cajun Fries", desc: "Perfectly seasoned and etxra crispy fries", price: 95.0, imageFile: "cajun fries"),
+        Item(name: "Rice", desc: "Steamed Rice", price: 100.0, imageFile: "rice"),
+        Item(name: "Kimchi Rice", desc: "Korean style fried rice topped with egg", price: 100.0, imageFile: "kimchi rice"),
+        Item(name: "Caramelized Onions", desc: "Sweet and earthy golden brown onions", price: 100.0, imageFile: "caramelized onion"),
+        Item(name: "Kimchi", desc: "Korean traditional fermented vegetable", price: 45.0, imageFile: "kimchi")
     ]
     
     override func viewDidLoad() {
@@ -30,7 +29,7 @@ class ItemTableViewController: UITableViewController{
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "itemID", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "SideDish", for: indexPath)
         cell.textLabel?.text = items[indexPath.row].name
         cell.detailTextLabel?.text = String(items[indexPath.row].price)
         cell.imageView?.image = UIImage(named: items[indexPath.row].imageFile)
@@ -38,7 +37,7 @@ class ItemTableViewController: UITableViewController{
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
-        let vc = segue.destination as! ItemViewController
+        let vc = segue.destination as! SideDishViewController
         if let indexPath = self.tableView.indexPathForSelectedRow{
             
             let item = items[indexPath.row]
@@ -47,3 +46,10 @@ class ItemTableViewController: UITableViewController{
         }
     }
 }
+//
+//  RiceMealTableViewController.swift
+//  swift-final-project
+//
+//  Created by Joseph Escalante on 12/3/24.
+//
+
